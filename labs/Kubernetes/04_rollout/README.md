@@ -172,7 +172,7 @@ In this lab you will create an application Deployment. Then you'll update it, ex
 1. Rollback to revision 3 by running
 
     ```bash
-    kubectl rollout undo deployments rollback --to-revision=3
+    kubectl rollout undo deployments rollout --to-revision=3
     ```
 
     and check the history: 
