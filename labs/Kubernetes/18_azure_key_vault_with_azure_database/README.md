@@ -94,13 +94,13 @@ Now we are going install and Azure CSI driver.
 1. Add Helm repo:
    
     ```bash
-    helm repo add csi-secrets-store-provider-azure https://raw.githubusercontent.com/Azure/secrets-store-csi-driver-provider-azure/master/charts
+    helm repo add csi-secrets-store-provider-azure https://azure.github.io/secrets-store-csi-driver-provider-azure/charts
     ```
 
 1. Install CSI driver:
 
     ```bash
-    helm install csi csi-secrets-store-provider-azure/csi-secrets-store-provider-azure -n csi --set secrets-store-csi-driver.syncSecret.enabled=true
+    helm install my-csi-secrets-store-provider-azure csi-secrets-store-provider-azure/csi-secrets-store-provider-azure --version 1.4.0 -n csi --set secrets-store-csi-driver.syncSecret.enabled=true
     ```
 
 1. Verify the driver was installed successfully. Enter:
