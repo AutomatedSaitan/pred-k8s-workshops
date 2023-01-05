@@ -52,7 +52,7 @@ Now you should have the first version of the app deployed to the AKS cluster.
 * execute following command
     
     ```bash
-    kubect get svc -n istio-system
+    kubectl get svc -n istio-system
     ```
     
     and look for External IP address of *istio-ingressgateway* service
