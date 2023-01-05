@@ -36,7 +36,8 @@ Now you should have the first version of the app deployed to the AKS cluster.
     ```bash
     kubectl get pods -n app --show-labels
     ```
-    ![deployment pods](img/deployment_pods.png)
+    
+![deployment pods](img/deployment_pods.png)
 
 ## Task 3: Creating Virtual Service and a Gateway
 
