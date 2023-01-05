@@ -95,10 +95,10 @@
     for  ((i=1;i<=100;i++)); do   curl  "<YOUR-INGRESS-IP>/app1"; done
     ```
 
-9. Open *jeager* dashboard by executing:
+9. Open *jaeger* dashboard by executing:
     
     ```bash
-    istioctl dashboard jeager
+    istioctl dashboard jaeger
     ```
     
 10. Examine the traces in the UI
